@@ -10,6 +10,7 @@
     "start": "webpack-dev-server --open"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^6.0.2",
     "firebase": "^7.15.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
