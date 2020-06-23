@@ -14,7 +14,7 @@ function login(username, password) {
         body: JSON.stringify({ username, password })
     };
 
-    return fetch(`${config.apiUrl}/users/authenticate`, requestOptions)
+    return fetch(`${config.apiUrl}/login_check`, requestOptions)
         .then(handleResponse)
         .then(user => {
             // login successful if there's a user in the response
