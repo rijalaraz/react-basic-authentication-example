@@ -22,6 +22,7 @@ function login(username, password) {
                 // store user details and basic auth credentials in local storage 
                 // to keep user logged in between page refreshes
                 user.authdata = window.btoa(username + ':' + password);
+                user.firstName = username;
                 localStorage.setItem('user', JSON.stringify(user));
             }
 
